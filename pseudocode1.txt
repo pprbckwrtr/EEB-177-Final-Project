@@ -1,0 +1,15 @@
+#before any coding, convert excel files to csv files
+
+cut demographic info csv file to only include columns which contain RID#, child's DOB, father's DOB, mother's DOB, and MHLE
+
+cut ados scores csv to only contain RID#, score subsets, and total scores
+
+join demographic info csv file with ados scores csv file based on RID#
+
+append joined files to third csv file (final file)
+
+grep and remove rows which do not contain both demographic info and ados scores from final file  
+
+import final file to python
+
+
