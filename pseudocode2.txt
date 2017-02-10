@@ -1,0 +1,32 @@
+#in python
+
+import numpy
+import final file csv
+import datetime
+open final file csv
+
+for row in final file csv:
+	subtract column with mother's DOB from column with child's DOB
+	convert days to years
+	append as column "age of mother @ birth" to end of each row 
+
+for row in final file csv:
+	subtract column with father's DOB from column with child's DOB
+	convert days to years
+	append as column "age of father @ birth" to end of each row
+
+import matplotlib (?)
+
+Either python or R???:
+
+visualize data in linear regression graphs as well as simple plots:
+	"age of mother @ birth" vs (1 of 3) ados subtotal scores
+	"age of mother @ birth" vs ados total score
+	"age of father @ birth" vs (1 of 3) ados subtotal scores
+	"age of father @ birth" vs ados total score
+	MHLE vs (1 of 3) ados subtotal scores
+	MHLE vs ados total score
+
+Collect R values from linear regression graphs
+Make a table of R values 
+	
