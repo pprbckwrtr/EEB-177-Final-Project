@@ -1,0 +1,57 @@
+---
+title: "linearregressionproject1"
+author: "Gayane Hovsepyan"
+date: "March 10, 2017"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Father vs Total A
+
+getwd()
+mydata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
+lm (mydata$ATotal ~ mydata$Father_birth_age, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total A field)
+lm.out = lm (mydata$ATotal ~ mydata$Father_birth_age, mydata= "output3.csv", na.strings="NULL") #naming output
+summary(lm.out) #gives LOTS of info about output, including coefficients, R values, R^2 etc
+options(show.signif.stars=F) #turning off significance stars
+anova(lm.out) #gives ANOVA table
+plot(mydata$ATotal ~ mydata$Father_birth_age, mydata='output3.csv', ylab = "ADOS Total A", xlab= "Age of Father at Birth", main="Age of Father at Birth vs. ADOS Total A")#plotting linear regression and naming plot
+abline(lm.out, col="red") #linear regression line red
+
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+getwd()
+mydata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
+lm (mydata$ATotal ~ mydata$Mother_birth_age, mydata = 'output3.csv') #linear regression of Age of mother field vs ADOS total A field)
+lm.out = lm (mydata$ATotal ~ mydata$Mother_birth_age, mydata= "output3.csv", na.strings="NULL") #naming output
+summary(lm.out) #gives LOTS of info about output, including coefficients, R values, R^2 etc
+anova(lm.out) #gives ANOVA table
+plot(mydata$ATotal~ mydata$Mother_birth_age, mydata='output3.csv', ylab= "ADOS Total A", xlab = "Age of Mother at Birth", main="Age of Mother vs ADOS Total A") #plotting linear regression and naming plot
+abline(lm.out, col="red") #linear regression line red
+
+```
+```{r}
+# Father vs Total A
+
+getwd()
+mydata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
+lm (mydata$BTotal ~ mydata$Father_birth_age, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total A field)
+lm.out = lm (mydata$BTotal ~ mydata$Father_birth_age, mydata= "output3.csv", na.strings="NULL") #naming output
+summary(lm.out) #gives LOTS of info about output, including coefficients, R values, R^2 etc
+options(show.signif.stars=F) #turning off significance stars
+anova(lm.out) #gives ANOVA table
+plot(mydata$BTotal ~ mydata$Father_birth_age, mydata='output3.csv', ylab = "ADOS Total B", xlab= "Age of Father at Birth", main="Age of Father at Birth vs. ADOS Total B")#plotting linear regression and naming plot
+abline(lm.out, col="red") #linear regression line red
+
+```
+
+```{r}
+tabledata <-read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/linearregressionsummary.csv")
+tabledata
+```
