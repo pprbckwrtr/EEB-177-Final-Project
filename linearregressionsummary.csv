@@ -1,0 +1,13 @@
+"Variables Tested",R-sqr,"Adjusted R-Sqr","Type of Correlation",p-value
+"Age of Father vs ADOS Total A",0.0001151,-0.008733,positive,0.9094
+"Age of Father vs ADOS Total B",0.0002288,-0.008698,negative,0.8731
+"Age of Father vs ADOS Total C",0.0252,0.01574,negative,0.1058
+"Age of Father vs ADOS Total D",0.009568,0.0002241,negative,0.3139
+"Age of Mother vs ADOS Total A",0.0007846,-0.00798,negative,0.7653
+"Age of Mother vs ADOS Total B",4.308E-05,-0.008806,negative,0.9445
+"Age of Mother vs ADOS Total C",0.0005609,-0.009049,negative,0.8096
+"Age of Mother vs ADOS Total D",0.003713,-0.005598,positive,0.5291
+"ADOS Total A vs Age of Diagnosis",0.02479,0.01705,negative,0.07594
+"ADOS Total B vs Age of Diagnosis",0.04292,0.03526,negative,0.01944
+"ADOS Total C vs Age of Diagnosis",0.04225,0.034,negative,0.02554
+"ADOS Total D vs Age of Diagnosis",0.1027,0.09512,negative,0.0003399
