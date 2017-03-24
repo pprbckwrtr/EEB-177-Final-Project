@@ -6,11 +6,12 @@ output:
   pdf_document: default
   html_document: default
 ---
+## Linear Regressions
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 getwd()
 mydata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-lm (mydata$CTotal ~ mydata$Father_birth_age, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total A field)
+lm (mydata$CTotal ~ mydata$Father_birth_age, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total C field)
 lm.out = lm (mydata$CTotal ~ mydata$Father_birth_age, mydata= "output3.csv", na.strings="NULL") #naming output
 summary(lm.out) #gives LOTS of info about output, including coefficients, R values, R^2 etc
 #options(show.signif.stars=F) #turning off significance stars
@@ -23,7 +24,7 @@ abline(lm.out, col="red") #linear regression line red
 knitr::opts_chunk$set(echo = TRUE)
 getwd()
 mydata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-lm (mydata$Dtotal ~ mydata$Father_birth_age, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total A field)
+lm (mydata$Dtotal ~ mydata$Father_birth_age, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total D field)
 lm.out = lm (mydata$Dtotal ~ mydata$Father_birth_age, mydata= "output3.csv", na.strings="NULL") #naming output
 summary(lm.out) #gives LOTS of info about output, including coefficients, R values, R^2 etc
 options(show.signif.stars=F) #turning off significance stars
@@ -36,7 +37,7 @@ abline(lm.out, col="red") #linear regression line red
 knitr::opts_chunk$set(echo = TRUE)
 getwd()
 mydata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-lm (mydata$Dtotal ~ mydata$Mother_birth_age, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total A field)
+lm (mydata$Dtotal ~ mydata$Mother_birth_age, mydata = 'output3.csv') #linear regression of Age of mother field vs ADOS total D field)
 lm.out = lm (mydata$Dtotal ~ mydata$Mother_birth_age, mydata= "output3.csv", na.strings="NULL") #naming output
 summary(lm.out) #gives LOTS of info about output, including coefficients, R values, R^2 etc
 options(show.signif.stars=F) #turning off significance stars
@@ -49,7 +50,7 @@ abline(lm.out, col="red") #linear regression line red
 knitr::opts_chunk$set(echo = TRUE)
 getwd()
 mydata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-lm (mydata$CTotal ~ mydata$Mother_birth_age, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total A field)
+lm (mydata$CTotal ~ mydata$Mother_birth_age, mydata = 'output3.csv') #linear regression of Age of mother field vs ADOS total A field)
 lm.out = lm (mydata$CTotal ~ mydata$Mother_birth_age, mydata= "output3.csv", na.strings="NULL") #naming output
 summary(lm.out) #gives LOTS of info about output, including coefficients, R values, R^2 etc 
 options(show.signif.stars=F) #turning off significance stars
@@ -63,7 +64,7 @@ abline(lm.out, col="red") #linear regression line red
 knitr::opts_chunk$set(echo = TRUE)
 getwd()
 mydata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-lm (mydata$Diagnosis_age ~ mydata$BTotal, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total A field)
+lm (mydata$Diagnosis_age ~ mydata$BTotal, mydata = 'output3.csv') #linear regression of Age of Diagnosis vs ADOS total B field)
 lm.out = lm (mydata$Diagnosis_age ~ mydata$BTotal, mydata= "output3.csv", na.strings="NULL") #naming output
 summary(lm.out) #gives LOTS of info about output, including coefficients, R values, R^2 etc
 options(show.signif.stars=T) #turning off significance stars
@@ -76,7 +77,7 @@ abline(lm.out, col="red") #linear regression line red
 knitr::opts_chunk$set(echo = TRUE)
 getwd()
 mydata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-lm (mydata$Diagnosis_age ~ mydata$ATotal, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total A field)
+lm (mydata$Diagnosis_age ~ mydata$ATotal, mydata = 'output3.csv') #linear regression of Age of Diagnosis vs ADOS total A field)
 lm.out = lm (mydata$Diagnosis_age ~ mydata$ATotal, mydata= "output3.csv", na.strings="NULL") #naming output
 summary(lm.out) #gives LOTS of info about output, including coefficients, R values, R^2 etc
 options(show.signif.stars=F) #turning off significance stars
@@ -89,7 +90,7 @@ abline(lm.out, col="red") #linear regression line red
 knitr::opts_chunk$set(echo = TRUE)
 getwd()
 mydata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-lm (mydata$Diagnosis_age ~ mydata$CTotal, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total A field)
+lm (mydata$Diagnosis_age ~ mydata$CTotal, mydata = 'output3.csv') #linear regression of Age of Diagnosis vs ADOS total C field)
 lm.out = lm (mydata$Diagnosis_age ~ mydata$CTotal, mydata= "output3.csv", na.strings="NULL") #naming output
 summary(lm.out) #gives LOTS of info about output, including coefficients, R values, R^2 etc
 options(show.signif.stars=F) #turning off significance stars
@@ -102,7 +103,7 @@ abline(lm.out, col="red") #linear regression line red
 knitr::opts_chunk$set(echo = TRUE)
 getwd()
 mydata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-lm (mydata$Diagnosis_age ~ mydata$Dtotal, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total A field)
+lm (mydata$Diagnosis_age ~ mydata$Dtotal, mydata = 'output3.csv') #linear regression of Age of Diagnosis vs ADOS total D field)
 lm.out = lm (mydata$Diagnosis_age ~ mydata$Dtotal, mydata= "output3.csv", na.strings="NULL") #naming output
 summary(lm.out) #gives LOTS of info about output, including coefficients, R values, R^2 etc
 options(show.signif.stars=F) #turning off significance stars
@@ -115,7 +116,7 @@ abline(lm.out, col="red") #linear regression line red
 knitr::opts_chunk$set(echo = TRUE)
 getwd()
 mydata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-lm (mydata$BTotal ~ mydata$Father_birth_age, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total A field)
+lm (mydata$BTotal ~ mydata$Father_birth_age, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total B field)
 lm.out = lm (mydata$BTotal ~ mydata$Father_birth_age, mydata= "output3.csv", na.strings="NULL") #naming output
 summary(lm.out) #gives LOTS of info about output, including coefficients, R values, R^2 etc 
 options(show.signif.stars=F) #turning off significance stars
@@ -129,7 +130,7 @@ abline(lm.out, col="red") #linear regression line red
 knitr::opts_chunk$set(echo = TRUE)
 getwd()
 mydata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-lm (mydata$BTotal ~ mydata$Father_birth_age, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total A field)
+lm (mydata$BTotal ~ mydata$Father_birth_age, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total B field)
 lm.out = lm (mydata$BTotal ~ mydata$Father_birth_age, mydata= "output3.csv", na.strings="NULL") #naming output
 summary(lm.out) #gives LOTS of info about output, including coefficients, R values, R^2 etc
 options(show.signif.stars=F) #turning off significance stars
@@ -138,144 +139,11 @@ plot(mydata$BTotal~ mydata$Father_birth_age, mydata='output3.csv', xlab = "Age o
 abline(lm.out, col="red") #linear regression line red
 
 ```
-## Histogram of Female vs Male Ados Scores
-```{r}
-newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-hist((newdata$ATotal)[newdata$Gender == 1], freq = FALSE, col=rgb(1,0,0,0.5), ylim = c(0,0.3), main="Gender and ADOS A total", xlab="ADOS A Total") #male ados scores
-hist(newdata$ATotal[newdata$Gender == 2], freq = FALSE, col=rgb(0,0,1,0.5), add=T)
-box() #female ados scores
-legend(x = "topright", # location of legend within plot area
- c("Male", "Female"), #labels
- col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)), #colors
- lwd = c(10, 10))
-```
-```{r}
-newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-hist((newdata$BTotal)[newdata$Gender == 1], freq = FALSE, col=rgb(1,0,0,0.5), ylim = c(0,0.3), breaks = 20, main="Gender and ADOS B total", xlab="ADOS B Total")
-hist(newdata$BTotal[newdata$Gender == 2], freq = FALSE, breaks = 15, col=rgb(0,0,1,0.5), add=T)
-box()
-legend(x = "topright", # location of legend within plot area
- c("Male", "Female"),
- col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),
- lwd = c(10, 10))
-```
-```{r}
-newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-hist((newdata$CTotal)[newdata$Gender == 1], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 20, ylim = c(0,0.50), main="Gender and ADOS C total", xlab="ADOS C Total")
-hist(newdata$CTotal[newdata$Gender == 2], breaks = 10, freq = FALSE, col=rgb(0,0,1,0.5), add=T)
-box()
-legend(x = "topright", # location of legend within plot area
- c("Male", "Female"),
- col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),
- lwd = c(10, 10))
-```
-```{r}
-hist(newdata$Father_birth_age[newdata$ATotal >= 5], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 25, ylim = c(0,0.25), main=" Father's Age and ADOS A Totals", xlab="Father's age during birth of child")
-hist(newdata$Father_birth_age[newdata$ATotal < 5], breaks = 30, freq = FALSE, col=rgb(0,0,1,0.5), add=T)
-box()
-legend(x = "topright", # location of legend within plot area
- c("Greater than or equal to median score", "Less than median score"),
- col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),
- lwd = c(10, 10))
-```
-```{r}
-# Pink is clinical, purple is subclinical
-newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-hist(newdata$Father_birth_age[newdata$BTotal >= 9], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 30, ylim = c(0,0.25), main=" Father's Age and ADOS B totals", xlab="Father's age during birth of child")
-hist(newdata$Father_birth_age[newdata$BTotal < 9], breaks = 30, freq = FALSE, col=rgb(0,0,1,0.5), add=T)
-legend(x = "topright", # location of legend within plot area
- c("Greater than or equal to median score", "Less than median score"),
- col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),
- lwd = c(10, 10))
-box()
-```
-```{r}
-# Pink is clinical, purple is subclinical
-newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-hist(newdata$Father_birth_age[newdata$CTotal >= 3], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 40, ylim = c(0,0.25), main=" Father's Age and ADOS C totals", xlab="Father's age during birth of child")
-hist(newdata$Father_birth_age[newdata$CTotal < 3], breaks = 40, freq = FALSE, col=rgb(0,0,1,0.5), add=T)
-box()
-legend(x = "topright", # location of legend within plot area
- c("Greater than or equal to median score", "Less than median score"),
- col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),
- lwd = c(10, 10))
-```
-```{r}
-# Pink is clinical, purple is subclinical
-newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-hist(newdata$Father_birth_age[newdata$Dtotal >= 3], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 35, ylim = c(0,0.25), main=" Father's Age and ADOS D totals", xlab="Father's age during birth of child")
-hist(newdata$Father_birth_age[newdata$Dtotal < 3], breaks = 47, freq = FALSE, col=rgb(0,0,1,0.5), add=T)
-box()
-legend(x = "topright", # location of legend within plot area
- c("Greater than or equal to median score", "Less than median score"),
- col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),
- lwd = c(10, 10))
-```
-```{r}
-newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-hist((newdata$Dtotal)[newdata$Gender == 1], freq = FALSE, breaks = 8, col=rgb(1,0,0,0.5), ylim = c(0,0.6), main="Gender and ADOS D total", xlab="ADOS D Total")
-hist(newdata$Dtotal[newdata$Gender == 2], freq = FALSE, breaks = 10, col=rgb(0,0,1,0.5), add=T)
-box()
-legend(x = "topright", # location of legend within plot area
- c("Male", "Female"),
- col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),
- lwd = c(10, 10))
-```
-```{r}
-newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-hist((newdata$Diagnosis_age)[newdata$Gender == 1], freq = FALSE, breaks = 30, col=rgb(1,0,0,0.5), ylim = c(0,1.3), main="Gender and Age of Diagnosis", xlab="Age of Diagnosis")
-hist(newdata$Diagnosis_age[newdata$Gender == 2], freq = FALSE, breaks = 30, col=rgb(0,0,1,0.5), add=T)
-legend(x = "topright", # location of legend within plot area
- c("Male", "Female"),
- col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),
- lwd = c(10, 10))
-box()
-```
-```{r}
-newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-hist(newdata$Mother_birth_age[newdata$ATotal >= 5], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 35, ylim = c(0,0.20), main=" Mother's Age and ADOS A totals", xlab="Mother's age during birth of child")
-hist(newdata$Mother_birth_age[newdata$ATotal < 5], breaks = 25, freq = FALSE, col=rgb(0,0,1,0.5), add=T)
-legend(x = "topright", # location of legend within plot area
- c("Greater than or equal to median score", "Less than median score"),
- col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),
- lwd = c(10, 10))
-box()
-```
-```{r}
-newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-hist(newdata$Mother_birth_age[newdata$BTotal >= 9], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 30, ylim = c(0,0.20), main="Mother's Age and ADOS B totals", xlab="Mother's age during birth of child")
-hist(newdata$Mother_birth_age[newdata$BTotal < 9], breaks = 20, freq = FALSE, col=rgb(0,0,1,0.5), add=T)
-legend(x = "topright", # location of legend within plot area
- c("Greater than or equal to median score", "Less than median score"),
- col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),
- lwd = c(10, 10))
-box()
-```
-```{r}
-newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-hist(newdata$Mother_birth_age[newdata$CTotal >= 3], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 35, ylim = c(0,0.25), main="Mother's Age and ADOS C totals", xlab="Mother's age during birth of child")
-hist(newdata$Mother_birth_age[newdata$CTotal < 3], breaks = 25, freq = FALSE, col=rgb(0,0,1,0.5), add=T)
-legend(x = "topright", # location of legend within plot area
- c("Greater than or equal to median score", "Less than median score"),
- col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),
- lwd = c(10, 10))
-box()
-```
-```{r}
-newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-hist(newdata$Mother_birth_age[newdata$Dtotal >= 3], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 20, ylim = c(0,0.25), main=" Mother's Age and ADOS D totals", xlab="Mother's age during birth of child")
-hist(newdata$Mother_birth_age[newdata$Dtotal < 3], breaks = 30, freq = FALSE, col=rgb(0,0,1,0.5), add=T)
-legend(x = "topright", # location of legend within plot area
- c("Greater than or equal to median score", "Less than median score"),
- col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),
- lwd = c(10, 10))
-box()
-```
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 getwd()
 mydata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
-lm (mydata$Diagnosis_age ~ mydata$MHLE, mydata = 'output3.csv') #linear regression of Age of father field vs ADOS total A field)
+lm (mydata$Diagnosis_age ~ mydata$MHLE, mydata = 'output3.csv') #linear regression of Age of Diagnosis vs MHLE field)
 lm.out = lm (mydata$Diagnosis_age ~ mydata$MHLE, mydata= "output3.csv", na.strings="NULL") #naming output
 summary(lm.out) #gives LOTS of info about output, including coefficients, R values, R^2 etc
 options(show.signif.stars=F) #turning off significance stars
@@ -283,4 +151,150 @@ anova(lm.out) #gives ANOVA table
 plot(mydata$Diagnosis_age ~ mydata$MHLE, xlim = c(2,10), mydata='output3.csv', xlab= "MHLE", ylab = "Age of Diagnosis", main="MHLE vs. Age of Diagnosis") #plotting linear regression and naming plot
 abline(lm.out, col="red") #linear regression line red
 ```
+## Histogram of Female vs Male Ados Scores
+```{r}
+newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
+hist((newdata$ATotal)[newdata$Gender == 1], freq = FALSE, col=rgb(1,0,0,0.5), ylim = c(0,0.3), main="Gender and ADOS A total", xlab="ADOS A Total") #male ados scores
+hist(newdata$ATotal[newdata$Gender == 2], freq = FALSE, col=rgb(0,0,1,0.5), add=T) #female ados scores
+box() 
+legend(x = "topright", # location of legend within plot area
+ c("Male", "Female"), #labels
+ col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)), #colors
+ lwd = c(10, 10)) #size of lines in legend
+```
+```{r}
+newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
+hist((newdata$BTotal)[newdata$Gender == 1], freq = FALSE, col=rgb(1,0,0,0.5), ylim = c(0,0.3), breaks = 20, main="Gender and ADOS B total", xlab="ADOS B Total") #male ados scores
+hist(newdata$BTotal[newdata$Gender == 2], freq = FALSE, breaks = 15, col=rgb(0,0,1,0.5), add=T) #female ados scores
+box()
+legend(x = "topright", # location of legend within plot area
+ c("Male", "Female"), #labels
+ col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)), #colors
+ lwd = c(10, 10)) #size of lines in legend
+```
+```{r}
+newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
+hist((newdata$CTotal)[newdata$Gender == 1], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 20, ylim = c(0,0.50), main="Gender and ADOS C total", xlab="ADOS C Total") #male ados scores
+hist(newdata$CTotal[newdata$Gender == 2], breaks = 10, freq = FALSE, col=rgb(0,0,1,0.5), add=T) #female ados scores
+box()
+legend(x = "topright", # location of legend within plot area
+ c("Male", "Female"), #labels
+ col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)), #colors
+ lwd = c(10, 10)) #thickness of lines in legend
+```
+```{r}
+newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
+hist((newdata$Dtotal)[newdata$Gender == 1], freq = FALSE, breaks = 8, col=rgb(1,0,0,0.5), ylim = c(0,0.6), main="Gender and ADOS D total", xlab="ADOS D Total") #male scores
+hist(newdata$Dtotal[newdata$Gender == 2], freq = FALSE, breaks = 10, col=rgb(0,0,1,0.5), add=T)
+box() #female scores
+legend(x = "topright", # location of legend within plot area
+ c("Male", "Female"),#labels
+ col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),#colors
+ lwd = c(10, 10))#thickness of lines in legend
+```
+## Histograms of parental ages and scores below and above medians
+```{r}
+hist(newdata$Father_birth_age[newdata$ATotal >= 5], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 25, ylim = c(0,0.25), main=" Father's Age and ADOS A Totals", xlab="Father's age during birth of child") #scores above median
+hist(newdata$Father_birth_age[newdata$ATotal < 5], breaks = 30, freq = FALSE, col=rgb(0,0,1,0.5), add=T) #scores below median
+box()
+legend(x = "topright", # location of legend within plot area
+ c("Greater than or equal to median score", "Less than median score"), #labels
+ col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),#colors
+ lwd = c(10, 10)) #thickness of lines in legend
+```
 
+```{r}
+# Pink is clinical, purple is subclinical
+newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
+hist(newdata$Father_birth_age[newdata$BTotal >= 9], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 30, ylim = c(0,0.25), main=" Father's Age and ADOS B totals", xlab="Father's age during birth of child") #scores above median
+hist(newdata$Father_birth_age[newdata$BTotal < 9], breaks = 30, freq = FALSE, col=rgb(0,0,1,0.5), add=T) #scores below median
+legend(x = "topright", # location of legend within plot area
+ c("Greater than or equal to median score", "Less than median score"),#labels
+ col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),#colors
+ lwd = c(10, 10)) #thickness of lines in legend
+box()
+```
+```{r}
+# Pink is clinical, purple is subclinical
+newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
+hist(newdata$Father_birth_age[newdata$CTotal >= 3], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 40, ylim = c(0,0.25), main=" Father's Age and ADOS C totals", xlab="Father's age during birth of child") #scores above median
+hist(newdata$Father_birth_age[newdata$CTotal < 3], breaks = 40, freq = FALSE, col=rgb(0,0,1,0.5), add=T) #scores below median
+box()
+legend(x = "topright", # location of legend within plot area
+ c("Greater than or equal to median score", "Less than median score"),#labels
+ col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),#colors
+ lwd = c(10, 10)) #thickness of lines in legend
+```
+```{r}
+# Pink is clinical, purple is subclinical
+newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
+hist(newdata$Father_birth_age[newdata$Dtotal >= 3], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 35, ylim = c(0,0.25), main=" Father's Age and ADOS D totals", xlab="Father's age during birth of child") #scores above median
+hist(newdata$Father_birth_age[newdata$Dtotal < 3], breaks = 47, freq = FALSE, col=rgb(0,0,1,0.5), add=T) #scores below median
+box()
+legend(x = "topright", # location of legend within plot area
+ c("Greater than or equal to median score", "Less than median score"),#labels
+ col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),#colors
+ lwd = c(10, 10))#thickness of lines in legend
+```
+
+```{r}
+newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
+hist(newdata$Mother_birth_age[newdata$ATotal >= 5], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 35, ylim = c(0,0.20), main=" Mother's Age and ADOS A totals", xlab="Mother's age during birth of child")#above median
+hist(newdata$Mother_birth_age[newdata$ATotal < 5], breaks = 25, freq = FALSE, col=rgb(0,0,1,0.5), add=T)#below median
+legend(x = "topright", # location of legend within plot area
+ c("Greater than or equal to median score", "Less than median score"),#labels
+ col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),#colors
+ lwd = c(10, 10))#thickness of lines in legend
+box()
+```
+```{r}
+newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
+hist(newdata$Mother_birth_age[newdata$BTotal >= 9], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 30, ylim = c(0,0.20), main="Mother's Age and ADOS B totals", xlab="Mother's age during birth of child")#above median
+hist(newdata$Mother_birth_age[newdata$BTotal < 9], breaks = 20, freq = FALSE, col=rgb(0,0,1,0.5), add=T)#below median
+legend(x = "topright", # location of legend within plot area
+ c("Greater than or equal to median score", "Less than median score"),#labels
+ col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),#colors
+ lwd = c(10, 10))#thickness of lines in legend
+box()
+```
+```{r}
+newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
+hist(newdata$Mother_birth_age[newdata$CTotal >= 3], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 35, ylim = c(0,0.25), main="Mother's Age and ADOS C totals", xlab="Mother's age during birth of child") #above median
+hist(newdata$Mother_birth_age[newdata$CTotal < 3], breaks = 25, freq = FALSE, col=rgb(0,0,1,0.5), add=T) #below median
+legend(x = "topright", # location of legend within plot area
+ c("Greater than or equal to median score", "Less than median score"),#labels
+ col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),#colors
+ lwd = c(10, 10))#thickness of lines in legend
+box()
+```
+```{r}
+newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
+hist(newdata$Mother_birth_age[newdata$Dtotal >= 3], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 20, ylim = c(0,0.25), main=" Mother's Age and ADOS D totals", xlab="Mother's age during birth of child") #above median
+hist(newdata$Mother_birth_age[newdata$Dtotal < 3], breaks = 30, freq = FALSE, col=rgb(0,0,1,0.5), add=T) #below median
+legend(x = "topright", # location of legend within plot area
+ c("Greater than or equal to median score", "Less than median score"),#labels
+ col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)), #colors
+ lwd = c(10, 10))#thickness of lines in legend
+box()
+```
+```{r}
+newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
+hist(newdata$Mother_birth_age[newdata$Dtotal >= 3], freq = FALSE, col=rgb(1,0,0,0.5), breaks = 20, ylim = c(0,0.25), main=" Mother's Age and ADOS D totals", xlab="Mother's age during birth of child") #above median
+hist(newdata$Mother_birth_age[newdata$Dtotal < 3], breaks = 30, freq = FALSE, col=rgb(0,0,1,0.5), add=T) #below median
+legend(x = "topright", # location of legend within plot area
+ c("Greater than or equal to median score", "Less than median score"),#labels
+ col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)), #colors
+ lwd = c(10, 10))#thickness of lines in legend
+box()
+```
+#histograms of gender and age of diagnosis
+```{r}
+newdata <- read.csv("/home/eeb177-student/Desktop/eeb-177-final-project/output3.csv", na.strings = "NULL")
+hist((newdata$Diagnosis_age)[newdata$Gender == 1], freq = FALSE, breaks = 30, col=rgb(1,0,0,0.5), ylim = c(0,1.3), main="Gender and Age of Diagnosis", xlab="Age of Diagnosis")#male scores
+hist(newdata$Diagnosis_age[newdata$Gender == 2], freq = FALSE, breaks = 30, col=rgb(0,0,1,0.5), add=T)#female scores
+legend(x = "topright", # location of legend within plot area
+ c("Male", "Female"),#labels
+ col = c(rgb(1,0,0,0.5),rgb(0,0,1,0.5)),#colors
+ lwd = c(10, 10))#thickness of lines in legend
+box()
+```
